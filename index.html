@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCom</title>
+    <script src="https://kit.fontawesome.com/9056de3c1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .inter-font {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        ;
+    </style>
+</head>
+
+<body class=" inter-font  bg-[#f3f3f3]">
+    <!-- header start  -->
+
+    <header class="container mx-auto  lg:mt-[30px] md:mt-[30px] pb-30px px-20">
+        <!-- nav start -->
+        <nav class="flex w-full items-center justify-between">
+            <div class="logo flex items-center">
+                <h1 class="text-3xl"><span class="text-[#fc6320]">e</span>Com</h1>
+                <p class="text-[#fc6320] text-2xl"><i class="fa-solid fa-asterisk"></i></p>
+            </div>
+            <div class="hamburger-menu md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
+            <div class="menuItems hidden md:block">
+                <ul class="flex gap-5 text-[#0F0E0E99] items-center">
+                    <li class="bg-[#fc63201a] p-2 rounded border-[#fc632026] text-[#fc6320]">Home</li>
+                    <li>Shop</li>
+                    <li>App Products</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="social-icons hidden md:block">
+                <ul class="flex gap-5 text-2xl">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-solid fa-x"></i></li>
+                    <li class="text-[#fc6320]"><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- nav end -->
+        <!-- Banner start-->
+        <section
+            class="relative h-[400px] xl:h-[450px] flex items-center justify-center bg-orange-400 bg-[url('./img/Rectangle-6.png')] rounded-3xl mt-10">
+            <div class="absolute inset-0 bg-gradient-to-t from-black opacity-35 rounded-3xl"></div>
+            <div class="text-center space-y-4 z-50">
+                <div class="title-desc text-center space-y-4">
+                    <h1 class=" text-white font-bold text-4xl">Don't Miss Out on These unbeatable, <br> Block Friday
+                        Deals!</h1>
+                    <p class="text-slate-300 font-normal">Save big this Black Friday width unbeatable deals on tech,
+                        home essential,<br> fashion, and more! Limited stock.</p>
+                </div>
+                <div class="explore-btn text-white">
+                    <button class="bg-[#fc6320] rounded-md p-3 ">Explore Deal</button>
+                    <button class="rounded-md p-3 border border-white">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner end -->
+        <!-- Brand start  -->
+        <section class="brand my-10">
+            <div><img class="filter grayscale" src="img/Frame-1.png" alt=""></div>
+        </section>
+        <!-- banner end  -->
+    </header>
+    <!-- header end  -->
+
+    <!-- main start  -->
+    <main class="px-20">
+        <!-- all products start  -->
+        <section class="products-section space-y-5">
+            <div class="text-center">
+                <h1 class="text-3xl my-5">Exclusive Products</h1>
+                <p class="text-[#0f0e03b2]">Save big this Black Friday width unbeatable deals on tech, home
+                    essential,<br> fashion, and more! Limited stock.</p>
+            </div>
+            <div class="products grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[24px]">
+                <div class="product-container bg-white rounded-lg">
+                    <div class="product p-5 space-y-2">
+                        <div class="h-[150px] bg-[#f3f3f3] rounded-lg  ">
+                            <img src="img/pexels.jpg" class="rounded-xl w-[100%] h-[100%]" alt="">
+                        </div>
+                        <div class="title-desc-btn">
+                            <h1 class="text-xl my-4">Exclusive Products</h1>
+                            <p class="text-[#0f0e03b2]">Save big this deals on tech, home essential,<br> fashion, and
+                                more! Limited stock.</p>
+                            <div class="quantity-price flex justify-between items-center">
+                                <h1>Price: 1520 Taka</h1>
+                                <div class="bg-[#0f0e0e0d] px-8 py-1 rounded-lg flex gap-3">
+                                    <span>+</span>
+                                    <span>2</span>
+                                    <span>-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <button class="w-full bg-gray-100 rounded-lg py-2 border border-gray-150">Add to
+                                cart</button>
+                            <button
+                                class="w-full bg-[#fc63201a] rounded-lg py-2 border border-[#fc63201a] text-[#FC6320]">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container bg-white rounded-lg">
+                    <div class="product p-5 space-y-2">
+                        <div class="h-[150px] bg-[#f3f3f3] rounded-lg">
+                            <img src="img/pexels.jpg" class="rounded-xl w-[100%] h-[100%]" alt="">
+                        </div>
+                        <div class="title-desc-btn">
+                            <h1 class="text-xl my-4">Exclusive Products</h1>
+                            <p class="text-[#0f0e03b2]">Save big this deals on tech, home essential,<br> fashion, and
+                                more! Limited stock.</p>
+                            <div class="quantity-price flex justify-between items-center">
+                                <h1>Price: 1520 Taka</h1>
+                                <div class="bg-[#0f0e0e0d] px-8 py-1 rounded-lg flex gap-3">
+                                    <span>+</span>
+                                    <span>2</span>
+                                    <span>-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <button class="w-full bg-gray-100 rounded-lg py-2 border border-gray-150">Add to
+                                cart</button>
+                            <button class="w-full bg-[#FC6320] rounded-lg py-2 border border-[#fc63201a] text-white">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container bg-white rounded-lg">
+                    <div class="product p-5 space-y-2">
+                        <div class="h-[150px] bg-[#f3f3f3] rounded-lg">
+                            <img src="img/pexels.jpg" class="rounded-xl w-[100%] h-[100%]" alt="">
+                        </div>
+                        <div class="title-desc-btn">
+                            <h1 class="text-xl my-4">Exclusive Products</h1>
+                            <p class="text-[#0f0e03b2]">Save big this deals on tech, home essential,<br> fashion, and
+                                more! Limited stock.</p>
+                            <div class="quantity-price flex justify-between items-center">
+                                <h1>Price: 1520 Taka</h1>
+                                <div class="bg-[#0f0e0e0d] px-8 py-1 rounded-lg flex gap-3">
+                                    <span>+</span>
+                                    <span>2</span>
+                                    <span>-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <button class="w-full bg-gray-100 rounded-lg py-2 border border-gray-150">Add to
+                                cart</button>
+                            <button
+                                class="w-full bg-[#fc63201a] rounded-lg py-2 border border-[#fc63201a] text-[#FC6320]">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container bg-white rounded-lg">
+                    <div class="product p-5 space-y-2">
+                        <div class="h-[150px] bg-[#f3f3f3] rounded-lg">
+                            <img src="img/pexels.jpg" class="rounded-xl w-[100%] h-[100%]" alt="">
+                        </div>
+                        <div class="title-desc-btn">
+                            <h1 class="text-xl my-4">Exclusive Products</h1>
+                            <p class="text-[#0f0e03b2]">Save big this deals on tech, home essential,<br> fashion, and
+                                more! Limited stock.</p>
+                            <div class="quantity-price flex justify-between items-center">
+                                <h1>Price: 1520 Taka</h1>
+                                <div class="bg-[#0f0e0e0d] px-8 py-1 rounded-lg flex gap-3">
+                                    <span>+</span>
+                                    <span>2</span>
+                                    <span>-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <button class="w-full bg-gray-100 rounded-lg py-2 border border-gray-150">Add to
+                                cart</button>
+                            <button
+                                class="w-full bg-[#fc63201a] rounded-lg py-2 border border-[#fc63201a] text-[#FC6320]">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container bg-white rounded-lg">
+                    <div class="product p-5 space-y-2">
+                        <div class="h-[150px] bg-[#f3f3f3] rounded-lg">
+                            <img src="img/pexels.jpg" class="rounded-xl w-[100%] h-[100%]" alt="">
+                        </div>
+                        <div class="title-desc-btn">
+                            <h1 class="text-xl my-4">Exclusive Products</h1>
+                            <p class="text-[#0f0e03b2]">Save big this deals on tech, home essential,<br> fashion, and
+                                more! Limited stock.</p>
+                            <div class="quantity-price flex justify-between items-center">
+                                <h1>Price: 1520 Taka</h1>
+                                <div class="bg-[#0f0e0e0d] px-8 py-1 rounded-lg flex gap-3">
+                                    <span>+</span>
+                                    <span>2</span>
+                                    <span>-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <button class="w-full bg-gray-100 rounded-lg py-2 border border-gray-150">Add to
+                                cart</button>
+                            <button
+                                class="w-full bg-[#fc63201a] rounded-lg py-2 border border-[#fc63201a] text-[#FC6320]">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-container bg-white rounded-lg">
+                    <div class="product p-5 space-y-2">
+                        <div class="h-[150px] bg-[#f3f3f3] rounded-lg">
+                            <img src="img/pexels.jpg" class="rounded-xl w-[100%] h-[100%]" alt="">
+                        </div>
+                        <div class="title-desc-btn">
+                            <h1 class="text-xl my-4">Exclusive Products</h1>
+                            <p class="text-[#0f0e03b2]">Save big this deals on tech, home essential,<br> fashion, and
+                                more! Limited stock.</p>
+                            <div class="quantity-price flex justify-between items-center">
+                                <h1>Price: 1520 Taka</h1>
+                                <div class="bg-[#0f0e0e0d] px-8 py-1 rounded-lg flex gap-3">
+                                    <span>+</span>
+                                    <span>2</span>
+                                    <span>-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <button class="w-full bg-gray-100 rounded-lg py-2 border border-gray-150">Add to
+                                cart</button>
+                            <button
+                                class="w-full bg-[#fc63201a] rounded-lg py-2 border border-[#fc63201a] text-[#FC6320]">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="all-products-btn flex justify-center">
+                <button class=" bg-[#FC6320] rounded-lg py-[10px] px-[26px] text-white">View All Products</button>
+            </div>
+        </section>
+        <!-- all products end  -->
+
+
+
+        <!-- counter section start -->
+        <section class="counter mt-[50px]">
+            <div>
+                <img src="img/counter.png" alt="">
+            </div>
+        </section>
+        <!-- counter section end  -->
+
+        <!-- registration start  -->
+        <section class="regis-section space-y-5">
+            <div class="text-center">
+                <h1 class="text-3xl my-5">Create account</h1>
+                <p class="text-[#0f0e03b2]">Save big this Black Friday width unbeatable deals on tech, home
+                    essential,<br> fashion, and more! Limited stock.</p>
+            </div>
+            <div class="form-secion bg-white flex flex-col lg:flex-row p-5 rounded">
+                <div class="h-full w-full lg:w-[50%]">
+                    <img src="img/regis.png" alt="">
+                </div>
+                <div class="h-full w-full lg:w-[50%]">
+                    <form class="space-y-4">
+                        <div class="space-y-1">
+                            <label for="name" class="block">Name</label>
+                            <div class="flex gap-2">
+                                <input class="w-[50%] py-2 rounded placeholder:pl-3 border outline-none " type="text"
+                                    required placeholder="First Name">
+                                <input class="w-[50%] py-2 rounded placeholder:pl-3 border outline-none " type="text"
+                                    required placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <label for="name" class="block">Email</label>
+                            <input class="w-full py-2 rounded placeholder:pl-3 border outline-none " type="text"
+                                required placeholder="Write Your Email">
+
+                        </div>
+                        <div class="space-y-1">
+                            <label for="name" class="block">Password</label>
+                            <input class="w-full py-2 rounded placeholder:pl-3 border outline-none " type="password"
+                                required placeholder="Write Your Password">
+
+                        </div>
+                        <div class="space-y-1">
+                            <label for="name" class="block">Age</label>
+                            <input class="w-full py-2 rounded placeholder:pl-3 border outline-none " type="number"
+                                required placeholder="Write Your Age">
+
+                        </div>
+                        <div class="space-y-1 flex gap-5">
+                            <div class="w-full">
+                                <label for="name" class="block">Gender</label>
+                                <select name="gender"
+                                    class="w-full py-2 rounded placeholder:pl-3  border outline-none ">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="w-full">
+                                <label for="name" class="block">Country</label>
+                                <select name="gender"
+                                    class="w-full py-2 rounded placeholder:pl-3  border outline-none ">
+                                    <option value="Sylhet">Sylhet</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="my-5">
+                        <button class="bg-[#fc6320] rounded-md p-3 w-full text-white ">Create Account</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- registration end  -->
+
+    </main>
+    <!-- main end     -->
+
+    <!-- footer start  -->
+    <footer class="overflow-hidden space-y-8">
+        <section class="reviews-section space-y-8 px-20">
+            <div class="title-btn-container flex">
+                <div class="w-full lg-w-1/2">
+                    <h1 class="text-3xl mt-10">What our Customer Says</h1>
+                    <p class="text-[#0f0e03b2]">Save big this Black Friday with unbeatable deals on tech, home
+                        essentials, <br> fashion, and more! Limited stock..</p>
+                </div>
+                <div class="arrow-container flex gap-5 lg-w-1/2 items-end">
+                    <div class="h-10 w-10 bg-[#FFFFFF] rounded-full flex items-center justify-center"><span><i
+                                class="fa-solid fa-arrow-right"></i></span></div>
+                    <div class="h-10 w-10 bg-[#0F0E0E] rounded-full flex items-center justify-center text-white">
+                        <span><i class="fa-solid fa-arrow-left"></i></span></div>
+                </div>
+            </div>
+            <div class="reviews-container flex gap-4">
+                <div class="review-cart bg-white rounded-xl p-5">
+                    <div class="content w-[300px] space-y-4">
+                        <div class="img-title-da flex items-center gap-5">
+                            <div class="img">
+                                <div class="w-[52px] h-[52px] bg-slate-200 rounded-full">
+                                    <img src="img/img-1.png" class="rounded-full" alt="">
+                                </div>
+
+                            </div>
+                            <div>
+                                <h1>Sumon Ahmed</h1>
+                                <p>10/10/2024</p>
+                            </div>
+                        </div>
+                        <p class="text-[#0F0E0EB2]">Save big this Black Friday with unbeatable deals on tech. Save big
+                            this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable
+                            deals on tech. </p>
+                        <div class=" flex gap-5 ">
+                            <ul class="text-[#FFC107]">
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                            </ul>
+                            <div>
+                                <h1 class="text-xl">(5.0)</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-cart bg-white rounded-xl p-5">
+                    <div class="content w-[300px] space-y-4">
+                        <div class="img-title-da flex items-center gap-5">
+                            <div class="img">
+                                <div class="w-[52px] h-[52px] bg-slate-200 rounded-full">
+                                    <img src="img/female.svg" class="rounded-full" alt="">
+                                </div>
+
+                            </div>
+                            <div>
+                                <h1>Rujina Akter</h1>
+                                <p>10/10/2024</p>
+                            </div>
+                        </div>
+                        <p class="text-[#0F0E0EB2]">Save big this Black Friday with unbeatable deals on tech. Save big
+                            this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable
+                            deals on tech. </p>
+                        <div class=" flex gap-5 ">
+                            <ul class="text-[#FFC107]">
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                            </ul>
+                            <div>
+                                <h1 class="text-xl">(4.8)</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-cart  bg-white rounded-xl p-5">
+                    <div class="content w-[300px] space-y-4">
+                        <div class="img-title-da flex items-center gap-5">
+                            <div class="img">
+                                <div class="w-[52px] h-[52px] bg-slate-200 rounded-full">
+                                    <img src="img/img-1.png" class="rounded-full" alt="">
+                                </div>
+
+                            </div>
+                            <div>
+                                <h1>Rimon Ahmed</h1>
+                                <p>10/10/2024</p>
+                            </div>
+                        </div>
+                        <p class="text-[#0F0E0EB2]">Save big this Black Friday with unbeatable deals on tech. Save big
+                            this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable
+                            deals on tech. </p>
+                        <div class=" flex gap-5 ">
+                            <ul class="text-[#FFC107]">
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                            </ul>
+                            <div>
+                                <h1 class="text-xl">(4.5)</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-cart  bg-white rounded-xl p-5">
+                    <div class="content w-[300px] space-y-4">
+                        <div class="img-title-da flex items-center gap-5">
+                            <div class="img">
+                                <div class="w-[52px] h-[52px] bg-slate-200 rounded-full">
+                                    <img src="img/female.svg" class="rounded-full" alt="">
+                                </div>
+
+                            </div>
+                            <div>
+                                <h1>Sabina Yesmin</h1>
+                                <p>10/10/2024</p>
+                            </div>
+                        </div>
+                        <p class="text-[#0F0E0EB2]">Save big this Black Friday with unbeatable deals on tech. Save big
+                            this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable
+                            deals on tech. </p>
+                        <div class=" flex gap-5 ">
+                            <ul class="text-[#FFC107]">
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                                <i class="fa-solid fa-asterisk"></i>
+                            </ul>
+                            <div>
+                                <h1 class="text-xl">(4.7)</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="footer h-[354px] bg-[#FFFFFF] flex justify-center items-center ">
+            <div class="flex flex-col justify-center items-center gap-5">
+                <div class="logo flex items-center">
+                    <h1 class="text-3xl"><span class="text-[#fc6320]">e</span>Com</h1>
+                    <p class="text-[#fc6320] text-2xl"><i class="fa-solid fa-asterisk"></i></p>
+                </div>
+                <p class="text-[#0F0E0EB2] text-center">Save big this Black Friday with unbeatable deals on tech, <br> home essentials, fashion, and more! Limited stock.</p>
+                <div class="h-0.5 w-[1022px] bg-gray-300"></div>
+               
+                <ul class="flex gap-5">
+                    <li class="font-bold">Home</li>
+                    <li class="text-[#0F0E0E99]">Shop</li>
+                    <li class="text-[#0F0E0E99]">App Products</li>
+                    <li class="text-[#0F0E0E99]">Contact</li>
+                </ul>
+                <ul class="flex gap-5 text-2xl">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-solid fa-x"></i></li>
+                    <li class="text-[#fc6320]"><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+               
+            </div>
+        </section>
+    </footer>
+
+    <!-- footer end  -->
+</body>
+
+</html>
